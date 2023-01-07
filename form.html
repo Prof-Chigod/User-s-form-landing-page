@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="form.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h2 class="top">Happy World Survey Form</h2>
+        <p class="top" id="head">Please share your ideas to make the world a better place</p>
+        <main>
+        <form>
+            <label>Name</label><br>
+            <input type="text" placeholder="Enter your name" size="100" required><br><br>
+            <label>Email</label><br>
+            <input type="email" placeholder="Your Email" size="100" required><br><br>
+            <label>Age</label><br>
+            <input type="text" placeholder="Age" size="100" required><br>
+            <p id="second">which role do you want to take to help the world?</p>
+            <select name="role" id="role">
+                <option value="#">Select your purpose</option>
+                <option value="data_scientist">Data Scientist</option> 
+                <option value="digital_marketer">Digital Marketer</option> 
+                <option value="web_designer">Web Designer(full stack)</option> 
+                <option value="graphics_designer">Graphics Designer</option> 
+                <option value="auditor">Auditor</option>
+            </select><br>
+            <p id="third">How many hours do you want to spend a week?</p>
+            <input type="radio" name="hours" id="one_five" value="1-5 hours"><label for="one_five" class="hr">1-5 hours</label>
+            <input type="radio" name="hours" id="five_ten" value="1-5 hours"><label for="five_ten" class="hr">5-10 hours</label>
+            <input type="radio" name="hours" id="ten_and" value="10&more hours"><label for="ten_and" class="hr">10&more hours</label>
+
+            <p id="fourth">Which continent do you want to participate in?</p>
+            <input type="checkbox" name="continent" id="africa" value="Africa"><label for="africa">Africa</label><br>
+            <input type="checkbox" name="continent" id="europe" value="Europe"><label for="europe">Europe</label><br>
+            <input type="checkbox" name="continent" id="south-america" value="South America"><label for="south-america">South America</label><br>
+            <input type="checkbox" name="continent" id="north-america" value="North America"><label for="north-america">North America</label><br>
+            <input type="checkbox" name="continent" id="australia" value="Australia"><label for="australia">Australia</label><br>
+            <input type="checkbox" name="continent" id="asia" value="Asia"><label for="asia">Asia</label><br>
+            <p id="last">Share your idea to improve our community.</p>
+            <textarea name="" id="" cols="97" rows="2" placeholder="write your opinion here"></textarea><br>
+            <input type="submit" name="" id="submit" onclick="alert('hi user')">
+        </form>
+        </main>
+    </body>
+</html>
